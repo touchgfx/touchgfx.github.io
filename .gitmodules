@@ -1,0 +1,21 @@
+[submodule "4.13"]
+	path = 4.13
+	url = https://github.com/touchgfx/4.13.touchgfx.github.io
+[submodule "4.14"]
+	path = 4.14
+	url = https://github.com/touchgfx/4.14.touchgfx.github.io
+[submodule "4.15"]
+	path = 4.15
+	url = https://github.com/touchgfx/4.15.touchgfx.github.io
+[submodule "4.16"]
+	path = 4.16
+	url = https://github.com/touchgfx/4.16.touchgfx.github.io
+[submodule "4.17"]
+	path = 4.17
+	url = https://github.com/touchgfx/4.17.touchgfx.github.io
+[submodule "4.18"]
+	path = 4.18
+	url = https://github.com/touchgfx/4.18.touchgfx.github.io
+[submodule "4.19"]
+	path = 4.19
+	url = https://github.com/touchgfx/4.19.touchgfx.github.io
