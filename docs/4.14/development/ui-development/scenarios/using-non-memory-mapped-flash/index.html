@@ -6,16 +6,16 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.66">
 <link rel="search" type="application/opensearchdescription+xml" title="TouchGFX Documentation" href="/opensearch.xml">
 <script src="/js/fix-location.js"></script><title data-react-helmet="true">Using Non-Memory Mapped Flash for storing images | TouchGFX Documentation</title><meta data-react-helmet="true" property="og:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" property="twitter:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for TouchGFX Documentation"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="4.14"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-4.14"><meta data-react-helmet="true" property="og:title" content="Using Non-Memory Mapped Flash for storing images | TouchGFX Documentation"><meta data-react-helmet="true" name="description" content="In this section we will discuss how to link all your images to a"><meta data-react-helmet="true" property="og:description" content="In this section we will discuss how to link all your images to a"><meta data-react-helmet="true" property="og:url" content="https://support.touchgfx.com/docs/4.14/development/ui-development/scenarios/using-non-memory-mapped-flash"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://BH4D9OD16A-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://support.touchgfx.com/docs/4.14/development/ui-development/scenarios/using-non-memory-mapped-flash"><link rel="stylesheet" href="/styles.96f21606.css">
-<link rel="preload" href="/styles.d4102ccc.js" as="script">
-<link rel="preload" href="/runtime~main.ecb70833.js" as="script">
-<link rel="preload" href="/main.7bb80f10.js" as="script">
-<link rel="preload" href="/1.6b4c08c6.js" as="script">
-<link rel="preload" href="/2.ba4588a5.js" as="script">
-<link rel="preload" href="/1125.709af801.js" as="script">
+<link rel="preload" href="/styles.603eecb2.js" as="script">
+<link rel="preload" href="/runtime~main.04f1851d.js" as="script">
+<link rel="preload" href="/main.4101b95b.js" as="script">
+<link rel="preload" href="/1.6fd954ac.js" as="script">
+<link rel="preload" href="/2.bd4f2be3.js" as="script">
+<link rel="preload" href="/1125.cdbd2127.js" as="script">
 <link rel="preload" href="/1128.a38847a6.js" as="script">
-<link rel="preload" href="/8b0f6470.79338ef1.js" as="script">
-<link rel="preload" href="/17896441.5594c8b8.js" as="script">
-<link rel="preload" href="/8b7f1586.8e2d11c9.js" as="script">
+<link rel="preload" href="/8b0f6470.08d7bc8c.js" as="script">
+<link rel="preload" href="/17896441.716e57ed.js" as="script">
+<link rel="preload" href="/8b7f1586.eee65a4c.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -70,15 +70,15 @@ table. This address will be in the range 0x24000000 - 0x24100000 and
 the read will result in an exception.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="linking-images-to-ram"></a>Linking images to RAM<a aria-hidden="true" tabindex="-1" class="hash-link" href="#linking-images-to-ram" title="Direct link to heading">#</a></h2><p>If your available RAM is big enough to hold all the images (in the
 above example that is more than 147.136 bytes) then you do not need to
 use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/4.14/development/ui-development/scenarios/creating-dynamic-l8-images"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Creating Dynamic L8 Images</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/4.14/miscellaneous/updating-to-a-new-touchgfx-version"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Updating to a new TouchGFX Version »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="table-of-contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="table-of-contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="table-of-contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="table-of-contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="table-of-contents__link">Linking images to RAM</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="/docs/miscellaneous/cookie-policy">Cookie Policy</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer></div>
-<script src="/styles.d4102ccc.js"></script>
-<script src="/runtime~main.ecb70833.js"></script>
-<script src="/main.7bb80f10.js"></script>
-<script src="/1.6b4c08c6.js"></script>
-<script src="/2.ba4588a5.js"></script>
-<script src="/1125.709af801.js"></script>
+<script src="/styles.603eecb2.js"></script>
+<script src="/runtime~main.04f1851d.js"></script>
+<script src="/main.4101b95b.js"></script>
+<script src="/1.6fd954ac.js"></script>
+<script src="/2.bd4f2be3.js"></script>
+<script src="/1125.cdbd2127.js"></script>
 <script src="/1128.a38847a6.js"></script>
-<script src="/8b0f6470.79338ef1.js"></script>
-<script src="/17896441.5594c8b8.js"></script>
-<script src="/8b7f1586.8e2d11c9.js"></script>
+<script src="/8b0f6470.08d7bc8c.js"></script>
+<script src="/17896441.716e57ed.js"></script>
+<script src="/8b7f1586.eee65a4c.js"></script>
 </body>
 </html>

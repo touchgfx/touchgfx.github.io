@@ -6,16 +6,16 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.66">
 <link rel="search" type="application/opensearchdescription+xml" title="TouchGFX Documentation" href="/opensearch.xml">
 <script src="/js/fix-location.js"></script><title data-react-helmet="true">9. Touch Controller | TouchGFX Documentation</title><meta data-react-helmet="true" property="og:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" property="twitter:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for TouchGFX Documentation"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="4.15"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-4.15"><meta data-react-helmet="true" property="og:title" content="9. Touch Controller | TouchGFX Documentation"><meta data-react-helmet="true" name="description" content="Motivation"><meta data-react-helmet="true" property="og:description" content="Motivation"><meta data-react-helmet="true" property="og:url" content="https://support.touchgfx.com/docs/development/board-bring-up/how-to/09-touch-controller"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://BH4D9OD16A-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://support.touchgfx.com/docs/development/board-bring-up/how-to/09-touch-controller"><link rel="stylesheet" href="/styles.96f21606.css">
-<link rel="preload" href="/styles.d4102ccc.js" as="script">
-<link rel="preload" href="/runtime~main.ecb70833.js" as="script">
-<link rel="preload" href="/main.7bb80f10.js" as="script">
-<link rel="preload" href="/1.6b4c08c6.js" as="script">
-<link rel="preload" href="/2.ba4588a5.js" as="script">
-<link rel="preload" href="/1125.709af801.js" as="script">
+<link rel="preload" href="/styles.603eecb2.js" as="script">
+<link rel="preload" href="/runtime~main.04f1851d.js" as="script">
+<link rel="preload" href="/main.4101b95b.js" as="script">
+<link rel="preload" href="/1.6fd954ac.js" as="script">
+<link rel="preload" href="/2.bd4f2be3.js" as="script">
+<link rel="preload" href="/1125.cdbd2127.js" as="script">
 <link rel="preload" href="/1128.a38847a6.js" as="script">
 <link rel="preload" href="/bfb38582.e5b9016d.js" as="script">
-<link rel="preload" href="/17896441.5594c8b8.js" as="script">
-<link rel="preload" href="/51c91b41.f8644868.js" as="script">
+<link rel="preload" href="/17896441.716e57ed.js" as="script">
+<link rel="preload" href="/51c91b41.ecc9511f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -36,15 +36,15 @@ select the first touch point.</p><p>In the &quot;TouchGFX AL Development&quot; a
 values to TouchGFX.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="performance-is-as-expected"></a>Performance is as expected<a aria-hidden="true" tabindex="-1" class="hash-link" href="#performance-is-as-expected" title="Direct link to heading">#</a></h3><p>Sampling touch should be possible within 1 ms if the code is executed
 in the same thread as the TouchGFX Application. If not fast enough,
 consider moving the code to a separate task, at a later stage.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/08-hardware-acceleration"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« 8. Hardware acceleration</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/10-physical-buttons"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">10. Physical Buttons »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#motivation" class="table-of-contents__link">Motivation</a></li><li><a href="#goal" class="table-of-contents__link">Goal</a><ul><li><a href="#verification" class="table-of-contents__link">Verification</a></li></ul></li><li><a href="#prerequisites" class="table-of-contents__link">Prerequisites</a></li><li><a href="#do" class="table-of-contents__link">Do</a><ul><li><a href="#performance-is-as-expected" class="table-of-contents__link">Performance is as expected</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="/docs/miscellaneous/cookie-policy">Cookie Policy</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer></div>
-<script src="/styles.d4102ccc.js"></script>
-<script src="/runtime~main.ecb70833.js"></script>
-<script src="/main.7bb80f10.js"></script>
-<script src="/1.6b4c08c6.js"></script>
-<script src="/2.ba4588a5.js"></script>
-<script src="/1125.709af801.js"></script>
+<script src="/styles.603eecb2.js"></script>
+<script src="/runtime~main.04f1851d.js"></script>
+<script src="/main.4101b95b.js"></script>
+<script src="/1.6fd954ac.js"></script>
+<script src="/2.bd4f2be3.js"></script>
+<script src="/1125.cdbd2127.js"></script>
 <script src="/1128.a38847a6.js"></script>
 <script src="/bfb38582.e5b9016d.js"></script>
-<script src="/17896441.5594c8b8.js"></script>
-<script src="/51c91b41.f8644868.js"></script>
+<script src="/17896441.716e57ed.js"></script>
+<script src="/51c91b41.ecc9511f.js"></script>
 </body>
 </html>

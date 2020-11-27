@@ -6,16 +6,16 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.66">
 <link rel="search" type="application/opensearchdescription+xml" title="TouchGFX Documentation" href="/opensearch.xml">
 <script src="/js/fix-location.js"></script><title data-react-helmet="true">Graphics Engine | TouchGFX Documentation</title><meta data-react-helmet="true" property="og:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" property="twitter:image" content="https://support.touchgfx.com/img/meta-image.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for TouchGFX Documentation"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="4.14"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-4.14"><meta data-react-helmet="true" property="og:title" content="Graphics Engine | TouchGFX Documentation"><meta data-react-helmet="true" name="description" content="TouchGFX graphics engine&#x27;s main responsibility is drawing graphics on the display of an embedded device."><meta data-react-helmet="true" property="og:description" content="TouchGFX graphics engine&#x27;s main responsibility is drawing graphics on the display of an embedded device."><meta data-react-helmet="true" property="og:url" content="https://support.touchgfx.com/docs/4.14/basic-concepts/graphics-engine"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://BH4D9OD16A-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://support.touchgfx.com/docs/4.14/basic-concepts/graphics-engine"><link rel="stylesheet" href="/styles.96f21606.css">
-<link rel="preload" href="/styles.d4102ccc.js" as="script">
-<link rel="preload" href="/runtime~main.ecb70833.js" as="script">
-<link rel="preload" href="/main.7bb80f10.js" as="script">
-<link rel="preload" href="/1.6b4c08c6.js" as="script">
-<link rel="preload" href="/2.ba4588a5.js" as="script">
-<link rel="preload" href="/1125.709af801.js" as="script">
+<link rel="preload" href="/styles.603eecb2.js" as="script">
+<link rel="preload" href="/runtime~main.04f1851d.js" as="script">
+<link rel="preload" href="/main.4101b95b.js" as="script">
+<link rel="preload" href="/1.6fd954ac.js" as="script">
+<link rel="preload" href="/2.bd4f2be3.js" as="script">
+<link rel="preload" href="/1125.cdbd2127.js" as="script">
 <link rel="preload" href="/1128.a38847a6.js" as="script">
-<link rel="preload" href="/8b0f6470.79338ef1.js" as="script">
-<link rel="preload" href="/17896441.5594c8b8.js" as="script">
-<link rel="preload" href="/697b194c.afa4a56f.js" as="script">
+<link rel="preload" href="/8b0f6470.08d7bc8c.js" as="script">
+<link rel="preload" href="/17896441.716e57ed.js" as="script">
+<link rel="preload" href="/697b194c.c1a86c89.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -27,15 +27,15 @@ The <a href="/docs/4.14/api/classes/classtouchgfx_1_1_l_c_d#function-drawpartial
 Collect events from the touch screen, presses of physical buttons, messages from backend system, ...</li><li><strong>Update scene model:</strong>
 React to the collected events, updating the positions, animations, colors, images, ... of the model</li><li><strong>Render scene model:</strong>
 Redraw the parts of the model that has been updated and make them appear on the display</li></ul><p>A diagrammatic version of the main loop is:</p><div class="figure noshadow"><a href="/img/basic-concepts/engine-cycle.png" target="_blank"><img width="320" src="/img/basic-concepts/engine-cycle.png"></a><p>Main loop</p></div><p>Each execution of the main loop is denoted a tick of the application.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_2cZh" id="platform-adaptibility"></a>Platform adaptibility<a aria-hidden="true" tabindex="-1" class="hash-link" href="#platform-adaptibility" title="Direct link to heading">#</a></h2><p>As TouchGFX is designed for running on all STM32 embedded setups the above activities can be tailored.</p><ul><li>The collection of events is handled by a dedicated abstraction layer. The tailoring of this layer is the subject of the section on <a href="/docs/4.14/development/touchgfx-hal-development/touchgfx-al-development-introduction">TouchGFX AL Development</a>.</li><li>The updating of the model is completely up to the application. The details on how to do this update is the subject of <a href="/docs/4.14/development/ui-development/ui-development-introduction">UI Development</a>.</li><li>The rendering of graphics to the framebuffer is handled by TouchGFX and will in general not need to be customized. The transferring of the pixels in the framebuffer to the display is platform specific, see <a href="/docs/4.14/development/board-bring-up/board-introduction">Board Bring Up</a> and <a href="/docs/4.14/development/touchgfx-hal-development/touchgfx-al-development-introduction">TouchGFX AL Development</a> for how to customize this to specific platforms.</li></ul><p>Read on to get more specifics on the main loop of TouchGFX.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/4.14/basic-concepts/framebuffer"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Framebuffer</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/4.14/basic-concepts/rendering"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Main Loop »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#scene-model" class="table-of-contents__link">Scene model</a></li><li><a href="#manipulate-the-model" class="table-of-contents__link">Manipulate the model</a></li><li><a href="#issue-drawing-commands" class="table-of-contents__link">Issue drawing commands</a></li><li><a href="#main-loop" class="table-of-contents__link">Main Loop</a></li><li><a href="#platform-adaptibility" class="table-of-contents__link">Platform adaptibility</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="/docs/miscellaneous/cookie-policy">Cookie Policy</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer></div>
-<script src="/styles.d4102ccc.js"></script>
-<script src="/runtime~main.ecb70833.js"></script>
-<script src="/main.7bb80f10.js"></script>
-<script src="/1.6b4c08c6.js"></script>
-<script src="/2.ba4588a5.js"></script>
-<script src="/1125.709af801.js"></script>
+<script src="/styles.603eecb2.js"></script>
+<script src="/runtime~main.04f1851d.js"></script>
+<script src="/main.4101b95b.js"></script>
+<script src="/1.6fd954ac.js"></script>
+<script src="/2.bd4f2be3.js"></script>
+<script src="/1125.cdbd2127.js"></script>
 <script src="/1128.a38847a6.js"></script>
-<script src="/8b0f6470.79338ef1.js"></script>
-<script src="/17896441.5594c8b8.js"></script>
-<script src="/697b194c.afa4a56f.js"></script>
+<script src="/8b0f6470.08d7bc8c.js"></script>
+<script src="/17896441.716e57ed.js"></script>
+<script src="/697b194c.c1a86c89.js"></script>
 </body>
 </html>
