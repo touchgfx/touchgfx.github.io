@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg 
+    x="0px" y="0px" width="322" height="202"
+    viewBox="-1 -1 322 202" 
+    style="background-color:#ffffff00" 
+    version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xml:space="preserve">
+ <style type="text/css"><![CDATA[
+        .fb_pixel rect { 
+            fill: none;
+            stroke: lightgray;
+            stroke-width: 2;
+            width: 80;
+            height: 50;
+        }
+        .fb_pixel text {
+            fill:black;
+            font-family: Calibri;
+            dominant-baseline: middle;
+            text-anchor: middle;            
+        }
+    ]]></style>
+
+    <defs>
+        <!-- solid color is not working in current browser -->
+        <solidColor color="maroon"/>
+        <linearGradient id="color1">
+            <stop stop-color="maroon"/>
+        </linearGradient>
+    </defs>
+
+  <g name="framebuffer">
+    <g class="fb_pixel">
+        <g>
+            <rect x="0" y="0" width="40" height="40"/>
+            <text x="20" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">0,0</text>
+        </g>
+        <g>
+            <rect x="40" y="0" width="40" height="40"/>
+            <text x="60" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">1,0</text>
+        </g>
+        <g>
+            <rect x="80" y="0" width="40" height="40"/>
+            <text x="100" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">2,0</text>
+        </g>
+        <g>
+            <text x="140" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <text x="260" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <rect x="280" y="0" width="40" height="40"/>
+            <text x="300" y="20" font-size="12" dominant-baseline="middle" text-anchor="middle">w-1,0</text>
+        </g>
+    </g>
+    <g class="fb_pixel">
+        <g>
+            <rect x="0" y="40" width="40" height="40"/>
+            <text x="20" y="60" font-size="12" dominant-baseline="middle" text-anchor="middle">0,1</text>
+        </g>
+        <g>
+            <rect x="40" y="40" width="40" height="40"/>
+            <text x="60" y="60" font-size="12" dominant-baseline="middle" text-anchor="middle">1,1</text>
+        </g>
+        <g>
+            <text x="100" y="60" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <text x="300" y="60" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+    </g>
+    <g class="fb_pixel">
+        <g>
+            <rect x="0" y="80" width="40" height="40"/>
+            <text x="20" y="100" font-size="12" dominant-baseline="middle" text-anchor="middle">0,2</text>
+        </g>
+        <g>
+            <text x="60" y="100" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <text x="300" y="100" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+    </g>
+    <g class="fb_pixel">
+        <g>
+            <text x="20" y="140" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <text x="300" y="140" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+    </g>
+    <g class="fb_pixel">
+        <g>
+            <text x="20" y="180" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <text x="260" y="180" font-size="12" dominant-baseline="middle" text-anchor="middle">...</text>
+        </g>
+        <g>
+            <rect x="280" y="160" width="40" height="40"/>
+            <text x="300" y="180" font-size="12" dominant-baseline="middle" text-anchor="middle">w-1,h-1</text>
+        </g>
+    </g>
+
+    <rect x="0" y="0" width="320" height="200" stroke="lightgray" fill="none" stroke-width="2"/>
+  </g>
+
+</svg>
+
