@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://support.touchgfx.com/blog</id>
+    <title>TouchGFX Documentation Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://support.touchgfx.com/blog"/>
+    <subtitle>TouchGFX Documentation Blog</subtitle>
+    <icon>https://support.touchgfx.com/img/favicon.png</icon>
+</feed>

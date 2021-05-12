@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg944"
+   version="1.1"
+   viewBox="0 0 21.963716 11.130684"
+   height="11.130684mm"
+   width="21.963717mm">
+  <defs
+     id="defs938">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-2"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1698-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-7-6"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1698-6-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-7"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1698-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1698" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata941">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-158.34274,-68.72311)"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.16700001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect831-8-1"
+       width="5.2916665"
+       height="3.96875"
+       x="166.62831"
+       y="75.801544" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.00653219px;line-height:1.25;font-family:calibri;-inkscape-font-specification:calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0251633"
+       x="167.84064"
+       y="78.230682"
+       id="text835-5-5"><tspan
+         id="tspan833-5-3"
+         x="167.84064"
+         y="78.230682"
+         style="font-size:1.41111112px;stroke-width:0.0251633">MCU</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.16700001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect831-8-1-4"
+       width="5.2916665"
+       height="3.96875"
+       x="158.42624"
+       y="75.801544" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.00653219px;line-height:1.25;font-family:calibri;-inkscape-font-specification:calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0251633"
+       x="159.59343"
+       y="78.230682"
+       id="text835-5-5-7"><tspan
+         id="tspan833-5-3-8"
+         x="159.59343"
+         y="78.230682"
+         style="font-size:1.41111112px;stroke-width:0.0251633">Flash</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.16700001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect831-8-1-9"
+       width="5.2916665"
+       height="3.96875"
+       x="174.93129"
+       y="75.801544" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.00653219px;line-height:1.25;font-family:calibri;-inkscape-font-specification:calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0251633"
+       x="175.47975"
+       y="78.230682"
+       id="text835-5-5-2"><tspan
+         id="tspan833-5-3-7"
+         x="175.47975"
+         y="78.230682"
+         style="font-size:1.41111112px;stroke-width:0.0251633">Display</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.16700001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect831-8-1-0"
+       width="5.2916665"
+       height="3.96875"
+       x="166.62831"
+       y="68.80661" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.00653219px;line-height:1.25;font-family:calibri;-inkscape-font-specification:calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0251633"
+       x="167.87991"
+       y="71.235748"
+       id="text835-5-5-3"><tspan
+         id="tspan833-5-3-9"
+         x="167.87991"
+         y="71.235748"
+         style="font-size:1.41111112px;stroke-width:0.0251633">RAM</tspan></text>
+    <path
+       id="path829-6-3"
+       d="m 172.4104,77.256747 h 0.92605 v -0.46302 l 0.92604,0.92604 -0.92604,0.92604 v -0.46302 h -0.92605 z"
+       style="fill:none;stroke:#000000;stroke-width:0.09260412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path829-6-3-2"
+       d="m 164.24705,77.190607 h 0.92605 v -0.46302 l 0.92604,0.92604 -0.92604,0.92604 v -0.46302 h -0.92605 z"
+       style="fill:none;stroke:#000000;stroke-width:0.09260412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path829-6-3-3"
+       d="m 170.86164,73.326117 v 0.92605 h 0.46302 l -0.92604,0.92604 -0.92604,-0.92604 h 0.46302 v -0.92605 z"
+       style="fill:none;stroke:#000000;stroke-width:0.09260412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path829-6-3-3-1"
+       d="m 168.48039,75.200807 v -0.92605 h 0.46302 l -0.92604,-0.92604 -0.92604,0.92604 h 0.46302 v 0.92605 z"
+       style="fill:none;stroke:#000000;stroke-width:0.09260412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
