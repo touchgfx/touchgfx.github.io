@@ -3,7 +3,7 @@ let newest_version = "4.19"
 if (window && window.location) {
   let version_regex = /^(\/[0-9]+.[0-9]+)/
   let path = window.location.pathname
-  let new_path = path
+  let new_path = (path.endsWith('/') && path !== '/') ? path.substr(0, path.length - 1) : path
   let match = new_path.match(version_regex)
 
   if (match == null)
