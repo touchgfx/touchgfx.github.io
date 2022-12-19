@@ -22,3 +22,6 @@
 [submodule "4.20"]
 	path = 4.20
 	url = https://github.com/touchgfx/4.20.touchgfx.github.io
+[submodule "4.21"]
+	path = 4.21
+	url = https://github.com/touchgfx/4.21.touchgfx.github.io
