@@ -3,10 +3,8 @@ from modules import helpers
 from functools import *
 from pprint import pp
 
-# versions = helpers.getVersions()
-versions = ["4.13"]
-# latestVersion = helpers.getLatestVersion(versions)
-latestVersion = "4.21"
+versions = helpers.getVersions()
+latestVersion = helpers.getLatestVersion(versions)
 
 excludedFolders = [
   ".git",
