@@ -24,7 +24,7 @@ for version in filter(lambda version : version != latestVersion, versions):
   ], excludedFolders)
 
   helpers.findReplaceRegex(f"./{version}", [
-    (r"(\{title:\"TouchGFX Documentation)(\")", r"\g<1> " + version + r"\g<2>"),
+    (r"(\{title:[a-zA-Z]+?,titleDelimiter:[a-zA-Z]+?\}=[a-zA-Z]+?;return\(null==[a-zA-Z]+?\?void 0:[a-zA-Z]+?\.trim\(\)\.length\)\?`\$\{[a-zA-Z]+?\.trim\(\)\} \$\{[a-zA-Z]+?\} \$\{[a-zA-Z]+?\})(`:[a-zA-Z]+?\})", r"\g<1> " + version + r"\g<2>"),
   ], [
     ".js",
   ], excludedFolders)
