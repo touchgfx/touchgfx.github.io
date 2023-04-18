@@ -8,11 +8,6 @@ versions = ["4.13"]
 # latestVersion = helpers.getLatestVersion(versions)
 latestVersion = "4.21"
 
-includedFiles = [
-  ".html",
-  ".htm",
-]
-
 excludedFolders = [
   ".git",
   latestVersion,
@@ -20,9 +15,16 @@ excludedFolders = [
 
 print("Adding version in the titles of archived versions")
 for version in filter(lambda version : version != latestVersion, versions):
-  replacementMap = [
-    (r"(<title.*?>)", r"\g<1>" + re.escape(version) + r" - "),
-    (r"(<meta[^>]*?property=\"og:title\"[^>]*?content=\")([^>]*?>)", r"\g<1>" + re.escape(version) + r" - \g<2>"),
-  ]
+  helpers.findReplaceRegex(f"./{version}", [
+    (r"(<title.*?>*)(<\/title>)", r"\g<1> " + version + r"\g<2>"),
+    (r"(<meta[^>]*?property=\"og:title\"[^>]*?content=\"[^\">]*?)(\">)", r"\g<1> " + version + r"\g<2>"),
+  ], [
+    ".html",
+    ".htm",
+  ], excludedFolders)
 
-  helpers.findReplaceRegex(f"./{version}", replacementMap, includedFiles, excludedFolders)
+  helpers.findReplaceRegex(f"./{version}", [
+    (r"/({title:\"TouchGFX Documentation)(\")/g", r"\g<1> " + version + r"\g<2>"),
+  ], [
+    ".js",
+  ], excludedFolders)
