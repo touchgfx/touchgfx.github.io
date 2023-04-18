@@ -24,7 +24,7 @@ for version in filter(lambda version : version != latestVersion, versions):
   ], excludedFolders)
 
   helpers.findReplaceRegex(f"./{version}", [
-    (r"/({title:\"TouchGFX Documentation)(\")/g", r"\g<1> " + version + r"\g<2>"),
+    (r"(\{title:\"TouchGFX Documentation)(\")", r"\g<1> " + version + r"\g<2>"),
   ], [
     ".js",
   ], excludedFolders)
