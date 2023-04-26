@@ -38,6 +38,8 @@ jobs:
           python-version: '3.10'
       - name: Add version to archived versions' titles
         run: python .github/workflows/prepareTitle.py
+      - name: Correct canonical links
+        run: python .github/workflows/prepareCanonical.py
       - name: Hide version banner in latest version
         run: python .github/workflows/prepareVersionBanner.py
       - name: Move latest version to root
