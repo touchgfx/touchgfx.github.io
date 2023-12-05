@@ -1,4 +1,4 @@
-let newest_version = "4.21"
+let newest_version = "4.23"
 
 if (window && window.location) {
   let version_regex = /^(\/[0-9]+.[0-9]+)/
